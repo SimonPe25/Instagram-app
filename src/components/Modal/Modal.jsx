@@ -12,14 +12,12 @@ const Modal = (props) => {
   const { _id, urlImage, url, country, name, nameArray, toggleIsOpenModal } =
     props;
 
- 
-
   setTimeout(
     () =>
       fetch(`https://backend-for-instagram.herokuapp.com/users/${_id}`)
         .then((res) => res.json())
         .then((result) => {
-          dispatch(udateComent(result.[nameArray]));
+          dispatch(udateComent(result[nameArray]));
         }),
     100
   );
@@ -46,11 +44,11 @@ const Modal = (props) => {
                 <h3 id="country">{country}</h3>
               </div>
             </div>
-            <div>
+            <div className="overflow-messagebox">
             <div className="message-box" id="messages">
               {messageArray.map((item) => (
                 <li key={item.message} className="message-container">
-                  <div>
+                  <div >
                     <Link
                       to={item.autor}
                       key={item.autor}
@@ -70,6 +68,7 @@ const Modal = (props) => {
                 </li>
               ))}
             </div>
+            </div>
             <div>
               <Form
                 inputEnter="input-enterModal"
@@ -78,7 +77,6 @@ const Modal = (props) => {
                 url={url}
                 nameArray={nameArray}
               />
-            </div>
             </div>
           </div>
         </div>
