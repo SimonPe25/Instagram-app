@@ -1,0 +1,67 @@
+.NoFriendContainer {
+  display: grid;
+  align-content: flex-start;
+  width: 250px;
+  height: 200px;
+  overflow: hidden;
+  overflow-y: auto;
+}
+.recomended {
+  position: absolute;
+  top: -16px;
+  font-size: 11px;
+  font-weight: 400;
+  color: #424242;
+}
+.user-block {
+  position: absolute;
+  top: -90px;
+}
+.title {
+  display: flex;
+  margin-top: 15px;
+}
+.title-card {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+
+  &__name {
+    margin-top: 3px;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: rgb(65, 64, 64);
+    margin-left: 10px;
+  }
+  &__life-credo {
+    margin-top: -4px;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 13px;
+    font-weight: 400;
+    color: rgb(65, 64, 64);
+    margin-left: 10px;
+  }
+
+  &__photo {
+    position: relative;
+    margin-bottom: 7px;
+    display: flex;
+    width: 2.5em;
+    height: 2.5em;
+    border-radius: 50%;
+    background-image: url("../../usersImages/katerinakhaidukova/01_katerinakhaidukova.jpg");
+    background-size: 30px auto;
+    cursor: pointer;
+  }
+
+  &__title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+  }
+}
+.user-block p {
+  size: 5px;
+}

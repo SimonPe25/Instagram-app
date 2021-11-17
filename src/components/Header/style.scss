@@ -1,0 +1,50 @@
+.container-block {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 935px;
+  margin: 0 auto;
+  padding: 0 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+}
+
+.logo {
+  max-width: 120px;
+}
+.header {
+  padding-top: 7px;
+  display: flex;
+  height: 54px;
+  border-bottom: 1.9px solid rgb(20%, 20%, 20%, 0.2);
+  background-color: #ffffff;
+}
+
+.icon-home {
+  max-width: 30px;
+}
+
+.user-logo {
+  margin-left: 20px;
+  width: 1.4em;
+  height: 1.4em;
+  border: 2px solid red;
+  border-radius: 50%;
+  background-image: url("../../usersImages/katerinakhaidukova/01_katerinakhaidukova.jpg");
+  background-size: 30px auto;
+  cursor: pointer;
+}
+
+.container-icons {
+  display: flex;
+  flex-direction: row;
+  vertical-align: middle;
+}
+.icon-header {
+  margin-left: 20px;
+  cursor: pointer;
+}
+.blockWithUser {
+  display: flex;
+}

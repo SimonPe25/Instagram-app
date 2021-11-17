@@ -1,0 +1,36 @@
+.container-HeartPage {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 7px 3px 3px 0px;
+  position: relative;
+}
+
+.icon-container-HeartPage {
+  display: flex;
+  flex-direction: row;
+}
+
+.icon-container-HeartPage h2 {
+  margin-left: 4px;
+  display: flex;
+  align-items: center;
+  font-size: 17px;
+  color: rgb(65, 65, 65);
+  margin-left: 12px;
+}
+.iconUserHeartPage {
+  margin-left: 20px;
+  width: 45px;
+  height: 45px;
+  border-radius: 20px;
+  margin-left: 0px;
+}
+.textUserHeartPage {
+  color: #00b3c7;
+  display: flex;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+  margin-right: 4px;
+}

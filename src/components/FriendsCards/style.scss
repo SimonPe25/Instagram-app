@@ -1,0 +1,56 @@
+.friendContainer {
+  display: grid;
+  align-content: flex-start;
+  width: 250px;
+  height: 200px;
+  overflow: hidden;
+  overflow-y: auto;
+}
+.right-block {
+  position: relative;
+}
+
+// .FriendContainer {
+//   width: 250px;
+//   height: 200px;
+//   background-color: rgb(215, 230, 173);
+//   overflow-y: scroll;
+// }
+
+.container-card {
+  display: flex;
+  flex-direction: column;
+  width: 616px;
+  min-height: auto;
+  max-height: 911px;
+}
+.image-container {
+  grid-column-start: 1;
+}
+
+.album__image {
+  min-width: 100%;
+  height: auto;
+}
+.recomended {
+  position: absolute;
+
+  top: -16px;
+  font-size: 12px;
+  font-weight: 400;
+  color: #424242;
+}
+.foot-container {
+  margin-top: 220px;
+  position: absolute;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.foot {
+  display: block;
+  top: -126px;
+  font-size: 11px;
+  font-weight: 400;
+  color: #aca9a9;
+}

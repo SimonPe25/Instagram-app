@@ -1,0 +1,36 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 7px 3px 3px 0px;
+}
+
+.icon-comtainer {
+  display: flex;
+  flex-direction: row;
+}
+.icon-comtainer h2 {
+  margin-left: 4px;
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  color: black;
+}
+.icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 20px;
+  margin-left: 0px;
+}
+.icon:hover {
+  scale: 2;
+  transition: 1s;
+}
+.text {
+  color: #00b3c7;
+  display: flex;
+  cursor: pointer;
+  font-size: 11px;
+  font-weight: 600;
+  margin-right: 4px;
+}

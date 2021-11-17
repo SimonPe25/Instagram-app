@@ -1,0 +1,138 @@
+$background-color: rgb(247, 241, 240);
+$white-color: white;
+$color-over: rgba(0, 0, 0, 0.7);
+
+.modalOverlay {
+  background-color: $color-over;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.modalwindow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: $background-color;
+  min-height: 42vh;
+  min-width: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &__container {
+    display: grid;
+    grid-template-columns: 1.35fr 1fr;
+  }
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__title {
+    font-weight: bold;
+    color: $white-color;
+    text-align: center;
+  }
+
+  &__body,
+  &__footer {
+    color: $white-color;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $background-color;
+  }
+  &__footer button:last-child {
+    margin-left: 10px;
+  }
+}
+
+.modal-close {
+  &__cross {
+    color: $white-color;
+    cursor: pointer;
+    font-size: 20px;
+  }
+}
+.icon-cont {
+  display: flex;
+  flex-direction: row;
+}
+.icon-cont h2 {
+  margin-left: 4px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 13px;
+  color: black;
+  font-weight: 600;
+}
+.message-container {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  margin: 15px 0 10px 12px;
+}
+
+.icon-c {
+  width: 30px;
+  height: 30px;
+  border-radius: 20px;
+  margin-left: 0px;
+}
+.icon-c:hover {
+  scale: 2;
+  transition: 1s;
+}
+.text-c {
+  display: flex;
+  margin-left: 12px;
+  font-size: 13.5px;
+  font-weight: 300;
+  margin-right: 4px;
+  margin-top: 3px;
+  margin-bottom: 15px;
+}
+.user-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 20px 7px 15px 10px;
+  border-bottom: 0.8px solid rgb(173, 171, 171);
+  padding-bottom: 12px;
+}
+.user-container h2 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333333;
+}
+.user-container h3 {
+  font-size: 13px;
+  font-weight: 500;
+  color: #1d1d1d;
+}
+
+.user-container div {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin-left: 12px;
+}
+.message-box {
+  overflow-y: scroll;
+  margin-bottom: 5px;
+}
+.max-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-height: 80vh;
+  min-height: 75vh;
+}

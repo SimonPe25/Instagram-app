@@ -1,0 +1,99 @@
+.container-card {
+  display: flex;
+  flex-direction: column;
+  width: 616px;
+  min-height: auto;
+  max-height: 911px;
+  border: 0.5px solid rgba(152, 152, 152, 0.4);
+  margin-top: 30px;
+}
+.image-container {
+  grid-column-start: 1;
+}
+.container-img {
+  background-color: black;
+  min-width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.album__image {
+  min-width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+.album__image:hover {
+  opacity: 0.5;
+}
+
+.title-cards {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+  margin-bottom: 3px;
+
+  &__name {
+    margin-top: 3px;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: rgb(65, 64, 64);
+    margin-left: 10px;
+  }
+  &__life-credo {
+    margin-top: -4px;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 13px;
+    font-weight: 400;
+    color: rgb(65, 64, 64);
+    margin-left: 10px;
+  }
+
+  &__photo-small {
+    position: relative;
+    margin-top: 7px;
+    margin-left: 7px;
+    margin-bottom: 7px;
+    display: flex;
+    margin-left: 20px;
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    background-image: url("../../usersImages/katerinakhaidukova/01_katerinakhaidukova.jpg");
+    background-size: 30px auto;
+    cursor: pointer;
+  }
+
+  &__title-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.title-card::after {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  margin-top: 0.19em;
+  margin-left: 1em;
+  width: 2.5em;
+  height: 2.5em;
+  border-radius: 50%;
+  vertical-align: middle;
+  box-shadow: 0 0 0 0.15em rgb(250, 0, 250) inset;
+}
+.icons-container {
+  display: flex;
+  align-items: center;
+}
+.icons-box {
+  padding: 12px 12px 12px 12px;
+  display: flex;
+  justify-content: space-between;
+}
+.star-class {
+  margin-right: 12px;
+  cursor: pointer;
+}
+.coment-class {
+  margin-right: 12px;
+}

@@ -1,0 +1,35 @@
+.container-cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 7px 3px 3px 0px;
+  position: relative;
+}
+
+.icon-container-cards {
+  display: flex;
+  flex-direction: row;
+}
+
+.icon-container-cards h2 {
+  margin-left: 4px;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  color: black;
+}
+.iconUser {
+  width: 30px;
+  height: 30px;
+  border-radius: 20px;
+  margin-left: 0px;
+}
+.textUser {
+  color: #00b3c7;
+  display: flex;
+  cursor: pointer;
+  font-size: 11px;
+  font-weight: 600;
+  margin-right: 4px;
+}
+

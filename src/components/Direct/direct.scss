@@ -1,0 +1,69 @@
+.direct-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  max-width: 935px;
+  margin: 0 auto;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  max-height: 88vh;
+  background-color: FFFFFF;
+  border: 1.8px solid rgb(219, 219, 219);
+  border-radius: 3px;
+  margin-top: 20px;
+  height: 49em;
+  overflow: hidden;
+  &__left {
+    border-right: 1.8px solid rgb(219, 219, 219);
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+  }
+  &__right {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  &__right > h3 {
+    font-family: system-ui;
+    font-size: 25px;
+    font-weight: 200;
+    color: rgb(71, 70, 70);
+  }
+  &__right > p {
+    margin-top: 15px;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 200;
+    color: rgb(114, 112, 112);
+  }
+}
+
+.header-boxes {
+  padding: 20px 0 20px 15px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-areas: ". qw qw qw er ty";
+
+  &__box-1 {
+    grid-area: qw;
+    justify-self: end;
+    margin-right: 5px;
+  }
+  &__box-2 {
+    grid-area: er;
+    justify-self: start;
+  }
+  &__box-3 {
+    grid-area: ty;
+    justify-self: center;
+  }
+}
+.images-noMessage {
+  max-width: 100px;
+  margin-bottom: 20px;
+}
+.textDirect {
+  margin-bottom: 20px;
+}

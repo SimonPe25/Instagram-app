@@ -1,0 +1,200 @@
+.containerUser {
+  max-width: 935px;
+  margin: 0 auto;
+  padding: 0 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  &__header {
+    padding-bottom: 30px;
+    display: grid;
+    grid-template-columns: 0.6fr 1fr;
+  }
+}
+.header-box {
+  border-bottom: 2px solid rgb(156, 150, 150, 0.3);
+  &__circle {
+    position: relative;
+    justify-self: center;
+    align-self: center;
+  }
+
+  &__photo {
+    margin-top: 2vh;
+    max-width: 15vh;
+    max-height: 15vh;
+    border-radius: 40vh;
+    overflow: hidden;
+    scrollbar-width: thin;
+    scrollbar-color: blue orange;
+  }
+  &__photo::after {
+    position: absolute;
+    left: -0.58vh;
+
+    top: 1.3vh;
+    content: "";
+    display: inline-block;
+    width: 16.3vh;
+    height: 16.3vh;
+    border-radius: 50%;
+    vertical-align: middle;
+    box-shadow: 0 0 0 0.15em rgb(250, 0, 250) inset;
+    overflow: visible;
+  }
+}
+.box__button {
+  display: flex;
+  margin-top: 20px;
+}
+.box {
+  &__viewer {
+    display: flex;
+    margin-top: 10px;
+  }
+  &__text {
+    font-size: 13px;
+    font-weight: 600;
+    color: black;
+    margin-right: 10px;
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  &__button > h2 {
+    font-size: 25px;
+    font-weight: 400;
+    color: rgb(59, 58, 58);
+    margin-right: 20px;
+  }
+  &__added {
+    min-width: 150px;
+    background-color: rgb(32, 228, 88);
+    border: 1px solid grey;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 500;
+  }
+  &__noadded {
+    min-width: 150px;
+    background-color: rgb(240, 107, 200);
+    border: 1px solid grey;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 500;
+  }
+}
+.content__name {
+  margin-top: 20px;
+  font-size: 15px;
+  font-weight: 600;
+  color: rgb(41, 37, 37);
+}
+.box__content > .cont {
+  font-size: 15px;
+  font-weight: 400;
+  color: rgb(70, 67, 67);
+}
+.content {
+  &__text {
+    margin-top: 20px;
+  }
+
+  &__text {
+    margin-top: 5px;
+    font-size: 13px;
+    font-weight: 400;
+    color: rgb(117, 113, 113);
+  }
+}
+.collection {
+  padding-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+  grid-column-gap: 20px;
+  grid-row-gap: 1em;
+
+  &__item {
+    max-height: 19em;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    z-index: 1;
+  }
+  &__item:hover {
+    opacity: 0.4;
+  }
+
+  &__container {
+    position: relative;
+    background-color: rgb(0, 0, 0);
+    min-width: 100%;
+    height: auto;
+  }
+  &__container:hover .like {
+    opacity: 1;
+  }
+}
+.collection > div {
+  overflow: hidden;
+  text-align: -webkit-center;
+}
+
+.album__image {
+  min-width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+.like {
+  position: absolute;
+  display: flex;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  &__content {
+    display: flex;
+    color: white;
+    font-size: 20px;
+    margin-right: 10px;
+  }
+  &__content span {
+    margin-left: 7px;
+  }
+}
+button.button15 {
+  margin-left: 100px;
+  display: inline-block;
+  font-family: arial, sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  color: rgb(68, 68, 68);
+  text-decoration: none;
+  user-select: none;
+  padding: 0.2em 1.2em;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+  background: rgb(245, 245, 245) linear-gradient(#f4f4f4, #f1f1f1);
+  transition: all 0.218s ease 0s;
+}
+button.button15:hover {
+  color: rgb(24, 24, 24);
+  border: 1px solid rgb(198, 198, 198);
+  background: #f7f7f7 linear-gradient(#f7f7f7, #f1f1f1);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+button.button15:active {
+  color: rgb(51, 51, 51);
+  border: 1px solid rgb(204, 204, 204);
+  background: rgb(238, 238, 238)
+    linear-gradient(rgb(238, 238, 238), rgb(224, 224, 224));
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) inset;
+}

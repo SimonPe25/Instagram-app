@@ -1,0 +1,44 @@
+.container-coment {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 12px 12px 12px 12xp;
+  border-top: 0.5px solid rgba(152, 152, 152, 0.4);
+}
+.smile-icon {
+  margin-right: 7px;
+  margin-top: 10px;
+  margin-left: 5px;
+  margin-bottom: 10px;
+}
+
+.input {
+  justify-content: space-between;
+  align-items: flex-end;
+  align-items: center;
+}
+.input-enter {
+  align-items: flex-end;
+}
+.form-box {
+  display: flex;
+}
+.form-button {
+  margin-left: 25vh;
+  color: #00b3c7;
+  font-weight: 520;
+  font-size: 16px;
+}
+.form-buttonModal {
+  color: #00b3c7;
+  font-weight: 520;
+  font-size: 15px;
+  margin-right: 3px;
+}
+.input-enterModal {
+  font-size: 15px;
+}
+.input-enterCards {
+  font-size: 15px;
+}
