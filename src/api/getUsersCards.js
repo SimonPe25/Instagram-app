@@ -1,8 +1,7 @@
 import axios from 'axios';
 
 const getUsersCards = () => {
-//return axios("../users.json")
-   return axios("https://backend-for-instagram.herokuapp.com/")      
+   return axios("https://dashboard.heroku.com/apps/warm-brushlands-96074")      
        
 }
 
