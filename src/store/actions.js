@@ -1,24 +1,11 @@
-//import getUsersCards from "../api/getUsersCards.js";
-import axios from "axios"
+import getUsersCards from "../api/getUsersCards.js";
 import { LOADING, UPDATE_CARDS, LOADED, NAME, MESSAGE } from "./types"
-
-
 
 
 export const fetchUsers = () => (dispatch) => {
 
-    const req_url = "https://dashboard.heroku.com/apps/warm-brushlands-96074"
-    //const access_token = 77777777777
-
     dispatch({ type: LOADING })
-
-    axios.get(req_url, {
-        headers: {
-            "Access-Control-Allow-Origin": ["http://localhost:3000", "https://dashboard.heroku.com/apps/warm-brushlands-96074", "https://frontend-for-instagram.herokuapp.com", "*"]
-        }
-    })
-
-        //getUsersCards()
+        getUsersCards()
         .then(res => {
             const normalizeArray = normalizeData(res.data);
             dispatch({ type: UPDATE_CARDS, payload: { cards: normalizeArray } })
