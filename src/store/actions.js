@@ -1,4 +1,5 @@
-import getUsersCards from "../api/getUsersCards.js";
+//import getUsersCards from "../api/getUsersCards.js";
+import axios from "axios"
 import { LOADING, UPDATE_CARDS, LOADED, NAME, MESSAGE } from "./types"
 
 
@@ -6,12 +7,25 @@ import { LOADING, UPDATE_CARDS, LOADED, NAME, MESSAGE } from "./types"
 
 export const fetchUsers = () => (dispatch) => {
 
+    const req_url = "https://dashboard.heroku.com/apps/warm-brushlands-96074"
+    //const access_token = 77777777777
+
     dispatch({ type: LOADING })
-    getUsersCards()
-    .then(res => {
-        const normalizeArray = normalizeData(res.data);
-        dispatch({ type: UPDATE_CARDS, payload: { cards: normalizeArray } })
+
+    axios.get(req_url, {
+        headers: {
+            "Access-Control-Allow-Origin": ["http://localhost:3000", "https://dashboard.heroku.com/apps/warm-brushlands-96074", "https://frontend-for-instagram.herokuapp.com", "*"]
+        }
     })
+
+        //getUsersCards()
+        .then(res => {
+            const normalizeArray = normalizeData(res.data);
+            dispatch({ type: UPDATE_CARDS, payload: { cards: normalizeArray } })
+        })
+        .catch((error) => {
+            console.error(error)
+        })
 
     const normalizeData = (data) => {
         return data.map(cardPlus => {
@@ -32,5 +46,5 @@ export const dataName = (data) => {
     return { type: NAME, payload: data }
 }
 export const udateComent = (data) => {
-    return {type: MESSAGE, payload: data}
+    return { type: MESSAGE, payload: data }
 }
