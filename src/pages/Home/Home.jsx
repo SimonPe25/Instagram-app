@@ -18,24 +18,26 @@ const Home = (props) => {
                 cards={cards}
             />
             </div>
-            <div className="right">
-            <div className="firstFrendsWindow">
-                <FriendsCards
-                cards={cards}
-                toggleAdded={toggleAdded}
-                toggleFavorite={toggleFavorite}
-                />
-            </div>
-            <div className="twoFrendsWindow">
-                <NoFriendsCards
-                cards={cards}
-                toggleAdded={toggleAdded}
-                toggleFavorite={toggleFavorite}
-                />
-            </div>
+            <div className='wrap' >
+              <div className="right fixed_wrap">
+                  <div className="firstFrendsWindow fixed">
+                    <FriendsCards
+                     cards={cards}
+                     toggleAdded={toggleAdded}
+                     toggleFavorite={toggleFavorite}
+                    />
+                 </div>
+                 <div className="twoFrendsWindow">
+                   <NoFriendsCards
+                    cards={cards}
+                    toggleAdded={toggleAdded}
+                    toggleFavorite={toggleFavorite}
+                   />
+                </div>
+             </div>
             </div>
         </div>
-        </>
+     </>
     )
 }
 

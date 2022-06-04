@@ -7,15 +7,17 @@
   font-family: Arial, Helvetica, sans-serif;
   width: 100%;
 }
+
 .right .firstFrendsWindow {
   position: fixed;
-  top: 430px;
-  transform: translateX(10%);
+  top: 60%;
+  transform: translateX(20%);
+ 
 }
 .right .twoFrendsWindow {
   position: fixed;
-  top: 16vh;
+  top: 18%;
   height: 200px;
-  transform: translateX(10%);
+  transform: translateX(20%);
   margin-top: 33px;
 }
